@@ -1,1 +1,1 @@
-# chat_bot
+The chatbot is being created for a small business, a hair salon that provides hair braiding services and sells hairs and hair products to customers. The business receives calls from customers on a daily basis, asking the same type of questions regarding the services they provide. The goal of the bot is to create a virtual assistant that can answer these recurrent questions on the website, to decrease the number of calls made out to the business daily.
