@@ -1,0 +1,28 @@
+from flask import Flask, render_template, request
+import importlib
+from flask_cors import CORS
+
+import import_ipynb
+import sika_chatbot as chatbot
+#chatbot = importlib.import_module('sika_chatbot')
+
+app = Flask(__name__)
+CORS(app, origins='*', methods=['POST'])
+
+def get_response(user_input):
+    return chatbot.answer(str.lower(user_input))
+    
+
+# @app.route("/")
+# def index():
+#     return render_template("./index.html")
+        
+
+@app.route("/get_response", methods=["POST"])
+def get_bot_response():
+    user_input = request.form["user_input"]
+    bot_response = get_response(user_input)
+    return bot_response
+
+if __name__ == "__main__":
+    app.run()
