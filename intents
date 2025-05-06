@@ -1,0 +1,153 @@
+import json
+
+{"intents": [
+    {"tag": "greetings",
+     "patterns": ["hello", "hey", "hi", "good day", "Greetings", "what's up?", "how is it going?", "How are you?"],
+     "responses": ["Hello!", "Hi!", "Hey!", "What can I do for you?"]
+    },
+
+     {"tag": "goodbye",
+     "patterns": ["cya", "see you later", "Goodbye", "I am leaving", "Have a Good day", "bye?", "ciao", "see ya", "adios"],
+     "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+     },
+    
+    {"tag": "name",
+     "patterns": ["what is your name", "what should I call you", "whats your name", "who are you?", "can you tell me your name?", "what are you?"],
+     "responses": ["You can call me Sika", "I'm Sika", "My name is Sika, Lekeo Beauty's online assistant"]
+    },
+
+    {"tag": "age",
+     "patterns": ["How old are you?", "how old?", "what's your age?", "your age", "age", "whats your age"],
+     "responses": ["I am ageless!"]
+    },
+
+    {"tag": "Hours",
+     "patterns": ["when are you guys open?", "Your opening hours", "Are you open right now?", "what time do you open?", "Are you open on the weekends?"],
+     "responses": ["We are open Monday - Saturday 10am-8pm. For braids, please call in advance to schedule your appointment"]
+    },
+
+     {"tag": "Services",
+     "patterns": ["what services do you offer?"],
+     "responses": ["Lekeo Beauty offers a wide range of hair services, including: Braids, Locs, Faux locs, Weaves, Crochets"]
+     },
+
+     {"tag": "Braiding",
+     "patterns": ["African braids", "what type of braiding services do you provide?", "Do you braid hair?"],
+     "responses": ["Lekeo Beauty offers a wide range of braiding services, including: Feed-in cornrows, box braids, knotless twists or braids, butterfly locs, passion twists, locs retwist, two-strand twists, touch-ups, Bohemian box braids, Bohemian faux locs, micro braids, large butterfly braids, ponytail cornrows with design, Mohawk Fulani braids with boho, and jumbo knotless braids"]
+     },
+
+    {"tag": "Weaves",
+     "patterns": ["weaving?", "sew-in?", "do you do weaves?"],
+     "responses": ["Lekeo Beauty offers a wide range of weaving services, including: Sew-in with lace frontal, sew-in with leave-out, sew-in with lace closure"]
+     },
+
+    {"tag": "Crochet",
+     "patterns": ["Do you do crochet?", "type of crochet", "crochet?"],
+     "responses": ["Lekeo Beauty offers a wide range of crochet services, including: crochet hair, crochet braids"]
+     },
+
+     {"tag": "Locs",
+     "patterns": ["Do you do locs?", "do you do soft locs?", "faux locs?"],
+     "responses": ["Lekeo Beauty offers a wide range of Locs services, including: locs installation and maintenance, Bohemian faux locs, Soft locs, Butterfly locs"]
+     },
+
+     {"tag": "Location",
+     "patterns": ["Where are you located?", "where is the salon?", "what is your address?", "Where can I find you?"],
+     "responses": ["We are located at 2120 San Pedro Ave, Suite 101, San Antonio, TX 78212"]
+     },
+
+     {"tag": "Appointment",
+     "patterns": ["How can I book an appointment for a service?", "Appointment"],
+     "responses": ["You can book an appointment at Lekeo Beauty through our website or by using online booking platforms like Booksy. Here are the steps: Visit our website: Go to https://lekeobeauty.net/  navigate to the Home page and click Book or Book Now to book your hair appointment. Or use this link to book through booksy: https://booksy.com/en-us/1227951_lekeo-beauty_braids-locs_134789_san-antonio#ba_s=sh_1"]
+     },
+
+    {"tag": "Contact",
+     "patterns": ["What's your phone number?", "Customer service?", "How can I reach you?", "Your contact information"],
+     "responses": ["You can give us a call at +1 (504) 321-1338, or email us at lekeobeauty@gmail.com, or visit our website https://lekeobeauty.net/, and use the contact form"]
+    },
+
+     {"tag": "Box Braids definition",
+     "patterns": ["what are box braids?"],
+     "responses": ["These are individual braids that are created by sectioning hair into small square-shaped parts. They're versatile and can be styled in various ways"]
+     },
+
+    {"tag": "Cornrows definition",
+     "patterns": ["What are cornrows?", "WHat does cornrow mean?"],
+     "responses": ["For cornrow styles, the hair is braided very close to the scalp in rows, which can be straight or designed in intricate patterns. They're neat and last a long time"]
+     },
+
+      {"tag": "knotless Braids definition",
+     "patterns": ["What are knotless braids?"],
+     "responses": ["Similar to box braids, but they don't have the knot at the base. This makes them lighter and gentler on the scalp"]
+     },
+
+     {"tag": "Butterfly Locs definition",
+     "patterns": ["What are Butterfly Locs?"],
+     "responses": ["A modern take on faux locs, these have a distressed and fluffy appearance, giving them a more natural and boho look"]
+     },
+
+    {"tag": "Fulani Braids definition",
+     "patterns": ["What are Fulani Braids?"],
+     "responses": ["Known for their unique patterns, these often feature a central braid that extends down the middle of the head with cornrows and box braids around it, often accessorized with beads"]
+     },
+
+    {"tag": "Passion Twists definition",
+     "patterns": ["What are Passion Twists?"],
+     "responses": ["A twist style with a more relaxed and bouncy appearance, often used with curly hair extensions for a voluminous look"]
+     },
+
+    {"tag": "Sew-In Weaves definition",
+     "patterns": ["What are Sew-In Weaves?"],
+     "responses": ["Not a braid style per se, but involve braiding the natural hair into cornrows and then sewing hair extensions onto the braids. They allow for different textures and lengths without altering natural hair."]
+     },
+
+    {"tag": "Two-Strand Twists definition",
+     "patterns": ["What are Two-Strand Twists?"],
+     "responses": ["For this style, hair is divided into sections and twisted together. This style can be worn as is or unraveled for a twist-out look"]
+     },
+
+    {"tag": "Braids Maintenance",
+     "patterns": ["What are the best practices for maintaining braids?"],
+     "responses": ["Maintaining braids properly is essential to keep them looking fresh and to protect your natural hair. Here are some best practices: Cleansing (Shampoo: Use a mild, sulfate-free shampoo to clean your scalp. Dilute the shampoo with water and apply it directly to your scalp, gently massaging to remove any buildup. Rinse thoroughly.), Drying (Ensure your braids are fully dried after washing to prevent mold and mildew. You can use a hooded dryer or gently pat them dry with a towel.), Moisturizing (Scalp Care: Keep your scalp moisturized by applying natural oils like jojoba, coconut, or tea tree oil. This helps prevent dryness and itching.), Hydration (Use a water-based leave-in conditioner or a braid spray to keep your hair hydrated. Avoid products with heavy oils or creams that can cause buildup.), Protection (Night Care: Protect your braids while sleeping by wrapping your hair in a silk or satin scarf or using a silk/satin pillowcase. This reduces friction and prevents frizz. Avoid Over-Styling: Minimize excessive pulling and tight hairstyles that can put strain on your hair and scalp.), Maintenance (Regular Touch-ups: Depending on the type of braids, you may need to touch up the edges or redo some braids to keep them looking neat. Watch for Signs of Damage: If you notice any breakage or excessive shedding, it may be time to take out the braids and give your hair a break.), Duration (Wear Time: It's recommended to keep braids in for no longer than 6-8 weeks to avoid tension and damage to your natural hair. Scalp Monitoring: Pay attention to your scalp’s health. If you experience any discomfort, redness, or signs of infection, consider removing the braids.), Gentle Removal (Take Your Time: When it’s time to remove your braids, be patient and gentle. Use a conditioner or detangling spray to make the process easier and avoid breakage. Deep Condition: After removing the braids, give your hair a thorough wash and deep conditioning treatment to restore moisture and strength). By following these best practices, you can maintain healthy hair and keep your braids looking beautiful. "]
+     
+     },
+
+    {"tag": "Passion Twists definition",
+     "patterns": ["What are Passion Twists?"],
+     "responses": ["A twist style with a more relaxed and bouncy appearance, often used with curly hair extensions for a voluminous look"]
+     },
+
+      {"tag": "Box Braids Prices",
+     "patterns": ["What are your prices for box braids?", "How much do you charge for box braids", "how much do box braids cost?", "price for box braids"],
+     "responses": ["The price for box braids starts at $180. We offer a variety of other braiding styles and services as well, with prices varying based on the complexity and length of the braids"]
+     },
+
+    {"tag": "Cornrows Prices",
+     "patterns": ["What are your prices for cornrows?", "How much do you charge for cornrows", "how much do cornrows cost?", "price for cornrows"],
+     "responses": ["feed-in cornrows starts at $180, foundation cornrows starts at $65, 2 French braids starts at $40, men cornrows start at $40, Medium Ponytail Cornrows with Design: $250+, Small Ponytail Cornrows with Design: $320+"]
+     },
+
+     {"tag": "Fulani Braids Prices ",
+     "patterns": ["What are your prices for fulani braids?", "How much do you charge for fulani braids", "how much do fulani braids cost?", "price for fulani braids"],
+     "responses": ["Fulani with Box Braids or twist in the Back starts at $180. The prices vary based on the style and length"]
+     },
+
+    {"tag": "Passion Twists prices",
+     "patterns": ["What are your prices for Passion Twists?", "How much do you charge for Passion Twists", "how much do Passion Twists cost?", "price for Passion Twists"],
+     "responses": ["The price for Passion Twists starts at $180 for mid-back length. We offer a variety of other styles and services, with prices varying based on the complexity and length of the twists"]
+     },
+
+    {"tag": "Boho Prices",
+     "patterns": ["How much for Boho Braids?", "Boho Braids prices", "what are your prices for Bohemian Braids", "Goddess braids prices", "bohemian box braids prices", "bohemian faux locs prices", "boho twist prices"],
+     "responses": ["The prices for Boho Braids vary based on the style and length. Here are some options: Half Bohemian Box Braids (Mid-back): $200+, Bohemian Faux Locs: $200+, Small Bohemian Braids (Butt Length): $330+, Large Bohemian Braids (Waist Length): $220+, Small Mohawk Fulani Braids with Boho: $490+"]
+     },
+
+    {"tag": "knotless Braids Prices",
+     "patterns": ["How much for knotless braids?", "knotless braids prices", "what are your prices for knotless Braids", "How much do you charge for knotless braids?"],
+     "responses": ["Our prices for knotless braids vary based on the size and length. Here are some options: Small Knotless Braids (mid-back): $250+, Small Knotless Braids (Waist Length): $270+, Small Knotless Braids (Butt Length): $300+, Medium Knotless Braids (mid-back): $200+,  Medium Knotless Braids (Waist Length): $250+, Medium Knotless Braids (Butt Length): $270 , Jumbo Knotless Braids (shoulder length): $85+, Jumbo Knotless Braids (mid-back): $130+, Jumbo Knotless Braids (Waist Length): $160, Large Knotless Braids (mid-back): $180+, Large Knotless Braids (Waist Length): $220+, Large Knotless Braids (Butt Length): $240+"]
+     },
+
+]}
+
+with open('intents.json', 'w') as json_file:
+    json.dump(intents, json_file, indent=4)
